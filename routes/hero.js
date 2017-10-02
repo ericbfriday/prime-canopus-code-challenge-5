@@ -5,6 +5,11 @@ var Hero = require('../models/heroModel');
 // get all heros
 router.get('/', function(req, res) {
   // TODO: add code to return all heros from the db
+  Hero.find()
+  .then(function(data)  {
+    console.log('logging data', data);
+    res.send(data);
+  });
 });
 
 // post to create a new hero
