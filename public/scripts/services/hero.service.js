@@ -3,7 +3,9 @@ myApp.service('HeroService', function ($http) {
   var self = this;
 
   // Set up a location for hero data to be stored
-  self.heroObject = { data: [] };
+  self.heroObject = {
+    data: []
+  };
 
   // function to add hero to the database
   self.addHeroToDB = function (heroObject) {
@@ -11,7 +13,7 @@ myApp.service('HeroService', function ($http) {
       method: 'POST',
       url: '/hero',
       data: heroObject
-    }).then(function() {
+    }).then(function () {
       self.getHeroFromDB();
     })
   }

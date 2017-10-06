@@ -3,13 +3,13 @@ myApp.controller('HeroController', function (HeroService) {
 
   // TODO: Bind the something on the view model to the hero data in ther service
   // HINT: check out the ng-repeat in index.html: ng-repeat="hero in hc.heroObject.data
-vm.getHeros = function() {
-  HeroService.getHeroFromDB();
-  vm.heroObject = HeroService.heroObject;
-};
+  vm.getHeros = function () {
+    HeroService.getHeroFromDB();
+    vm.heroObject = HeroService.heroObject;
+  };
 
   // TODO: Add code here to get heros on controller load
-    vm.getHeros();
+  vm.getHeros();
 
   // function to add hero
   vm.addHero = function () {

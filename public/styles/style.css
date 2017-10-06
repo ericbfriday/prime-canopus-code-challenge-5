@@ -1,20 +1,21 @@
 /* DO NOT MODIFY */
+
 body {
   font-family: sans-serif;
 }
 
 .myform {
-  margin:0 auto;
-  padding:14px;
+  margin: 0 auto;
+  padding: 14px;
 }
 
 #stylized input {
-  padding:4px 2px;
-  border:solid 1px LightBlue;
+  padding: 4px 2px;
+  border: solid 1px LightBlue;
 }
 
 .box {
-  border:solid 1px LightBlue;
+  border: solid 1px LightBlue;
   border-radius: 2px;
   padding: 10px;
   margin: 10px;
